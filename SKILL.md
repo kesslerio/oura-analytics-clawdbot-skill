@@ -106,7 +106,7 @@ openclaw cron add \
   --deliver \
   --channel telegram \
   --target "<YOUR_TELEGRAM_CHAT_ID>" \
-  --message "Run the daily Oura health report using the Lobster workflow daily-oura-hybrid.lobster, then summarize the result."
+  --message "Use the Oura Analytics entrypoint at /path/to/oura-analytics/crons/daily-oura-report-hybrid.sh to generate the daily hybrid report, then summarize the result."
 ```
 
 Do not phrase Telegram-delivered cron prompts as "Execute bash ...". That can push the run into an approval-gated exec path that chat delivery cannot satisfy.
@@ -122,7 +122,7 @@ openclaw cron add \
   --deliver \
   --channel telegram \
   --target "<YOUR_TELEGRAM_CHAT_ID>" \
-  --message "Run the weekly Oura sleep report using the Lobster workflow weekly-sleep.lobster, then summarize the result."
+  --message "Use the Oura Analytics script at /path/to/oura-analytics/scripts/weekly_report.py --days 7 to generate the weekly sleep report, then summarize the result."
 ```
 
 ### Daily Obsidian Note (8:15 AM)
@@ -136,4 +136,4 @@ openclaw cron add \
   --message "Create daily Obsidian note with Oura data. Run: source /path/to/venv/bin/activate && python /path/to/daily-note.py"
 ```
 
-**Note:** Replace `/path/to/your/` with your actual paths and `<YOUR_TELEGRAM_CHAT_ID>` with your Telegram channel/group ID.
+**Note:** Replace the `/path/to/...` placeholders (e.g. `/path/to/oura-analytics/`, `/path/to/venv/`) with your actual checkout paths and `<YOUR_TELEGRAM_CHAT_ID>` with your Telegram channel/group ID.
