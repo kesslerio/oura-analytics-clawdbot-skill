@@ -136,4 +136,4 @@ openclaw cron add \
   --message "Create daily Obsidian note with Oura data. Run: source /path/to/venv/bin/activate && python /path/to/daily-note.py"
 ```
 
-**Note:** Replace `/path/to/your/` with your actual paths and `<YOUR_TELEGRAM_CHAT_ID>` with your Telegram channel/group ID.
+**Note:** Replace the `/path/to/...` placeholders (e.g. `/path/to/oura-analytics/`, `/path/to/venv/`) with your actual checkout paths and `<YOUR_TELEGRAM_CHAT_ID>` with your Telegram channel/group ID.
