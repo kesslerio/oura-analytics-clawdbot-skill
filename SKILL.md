@@ -8,6 +8,8 @@ metadata: {"openclaw":{"requires":{"bins":["python3"],"env":["OURA_API_TOKEN"]},
 
 ## Quick Start
 
+**Owned entrypoints:** `daily_summary.py`, `daily-note.py`, `oura_api.py`, `alerts.py`, `weekly_report.py`.
+
 ```bash
 # Set Oura API token
 export OURA_API_TOKEN="your_personal_access_token"
